@@ -1,8 +1,8 @@
 # Parvazhub_ionic
-Hybrid mobile app for [**parvazhub.com**](http://parvazhub.com) , created with **ionic framework**
+Hybrid mobile app for [**parvazhub.com**](http://parvazhub.com) , created with [**ionic framework**](https://ionicframework.com)
 
-Written with ionic v2
-Uses Cordova plugins
+Written with *ionic v2*
+Uses *Cordova* plugins
 
 User selects origin city , destination city and the flight date . the app sends a get request to server and recieves flight list according to user's request.
 after choosing a flight from the list , app redirects user to supplier's webpage.
