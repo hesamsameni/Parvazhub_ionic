@@ -1,5 +1,5 @@
 # Parvazhub_ionic
-Hybrid mobile app for parvazhub.com , created with ionic framework
+Hybrid mobile app for [**parvazhub.com**](http://parvazhub.com) , created with **ionic framework**
 
 Written with ionic v2
 Uses Cordova plugins
@@ -10,6 +10,8 @@ after choosing a flight from the list , app redirects user to supplier's webpage
 You can build this app for both Android and Ios with cordova plugins
 
 to use the app on you browser:
+- install node.js
+- install ionic framework by typing "npm install -g cordova ionic"
 - Clone the project on your machine ( or download zip file )
 - Go to project's directory
 - Run "npm install" in command line
