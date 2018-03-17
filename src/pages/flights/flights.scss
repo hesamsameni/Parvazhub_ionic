@@ -1,0 +1,117 @@
+    page-flights {
+        ion-content,
+        ion-list,
+        ion-item {
+            // background-color: #29aae1!important;
+            background-color: #fff;
+        }
+        ion-col {
+            color: black!important;
+        }
+        .text-right {
+            text-align: right!important;
+        }
+        .flight_departure_time {
+            font-size: 14px;
+        }
+        .flights-card {
+            position: relative;
+            height: 150px;
+            .flight-logo {
+                position: absolute;
+                width: 70px;
+                right: 10px;
+                top: 18px;
+            }
+            .flight-bestprice {
+                font-size: 22px;
+                color: white;
+                background-color: #FBBD08;
+                padding: 5px 8px;
+                border-radius: 9px;
+                position: absolute;
+                top: 20px;
+                left: 10px;
+                font-weight: bold;
+                margin-bottom: 50px;
+                font-family: 'Ubuntu', sans-serif;
+                span {
+                    float: left;
+                    font-size: 12px;
+                    margin-right: 3px;
+                    padding-top: 5px;
+                }
+            }
+            .flight-supplier-count {
+                font-size: 10px;
+                color: gray;
+                font-weight: 100;
+                position: absolute;
+                top: 65px;
+                left: 15px;
+            }
+            .flight-airline {
+                position: absolute;
+                right: 90px;
+                top: 20px;
+                font-weight: bold;
+            }
+            .flight-rate {
+                position: absolute;
+                right: 90px;
+                top: 50px;
+                font-size: 10px;
+                color: gray;
+                font-weight: 300;
+            }
+            .airplane {
+                position: absolute;
+                right: 90px;
+                top: 75px;
+                font-size: 10px;
+                color: gray;
+                font-weight: 100;
+            }
+            .flight-supplier {
+                direction: rtl;
+            }
+            .flight-delay {
+                text-align: right;
+                display: block;
+                font-size: 12px;
+                font-weight: 100;
+                span {
+                    color: orange;
+                    margin-right: 5px;
+                    margin-left: 5px;
+                }
+                &.hide {
+                    display: none;
+                }
+            }
+            .flight-time {
+                text-align: left;
+                font-size: 12px;
+                font-weight: bold;
+                font-family: 'Ubuntu', sans-serif;
+                img {
+                    width: 15px;
+                    margin-right: 10px;
+                    opacity: 0.4;
+                }
+                &.landing {
+                    display: block;
+                }
+            }
+        }
+        .toolbar-title {
+            font-size: 1.1rem!important;
+            span {
+                display: inline;
+                vertical-align: middle;
+                margin-right: 5px;
+                font-size: 12px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+        }
+    }

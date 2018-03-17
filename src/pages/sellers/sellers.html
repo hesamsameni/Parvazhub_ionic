@@ -1,0 +1,30 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>فروشنده ها</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item *ngFor="let seller of this.sellers" (click)="redirect(seller.id,seller.flight_id,this.originFetch,this.destinationFetch,this.dateFetch);">
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-6>
+                        <img class="seller-logo" src="{{seller.supplier_logo}}">
+
+                    </ion-col>
+                    <ion-col col-6>
+                        <p class="seller-price">{{seller.price | number}}<span> تومان</span></p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+            <p class="seller-cta">خرید از وبسایت {{seller.supplier_persian_name}}</p>
+
+        </ion-item>
+    </ion-list>
+</ion-content>

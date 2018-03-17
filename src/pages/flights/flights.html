@@ -1,0 +1,44 @@
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title class="custom-ios-title">لیست پرواز ها از {{this.flights?.search_params?.origin_persian_name}} به {{this.flights?.search_params?.destination_persian_name}} در تاریخ <span>{{this.persianDate}}</span></ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-list>
+        <ion-item class="flights-card" *ngFor="let flight of this.flights?.body" (click)="goToSellersPage(flight.id,this.origin_name,this.destination_name,this.date)">
+            <img class="flight-logo" src="assets/imgs/airline-logos/{{flight.airline_code}}@2x.png">
+            <p class="flight-bestprice"><span>تومان</span>{{flight.best_price | number}}</p>
+            <p class="flight-supplier-count">بهترین قیمت از {{flight.supplier_count}} سایت</p>
+            <span class="flight-rate">امتیاز کاربران {{flight.airline_rate_average}} از 5</span>
+            <!-- <p class="flight-number">{{flight.flight_number}}</p> -->
+            <p class="flight-airline">{{flight.airline_persian_name}}</p>
+            <p class="airplane">{{flight.airplane_type}}</p>
+
+            <ion-grid class="mt--90">
+                <ion-row>
+                    <ion-col col-6>
+                        <p *ngIf="flight.delay != null" class="flight-delay">احتمال تاخیر<span>{{flight.delay}}</span>دقیقه</p>
+                    </ion-col>
+                    <ion-col col-6>
+                        <p class="flight-time">{{flight.departure_time | date:'shortTime'}}<img src="assets/imgs/departure.png" alt="Departure Logo"></p>
+                        <p *ngIf="flight.arrival_date_time != null" id="landing_time" class="flight-time landing">{{flight.arrival_date_time | date:'shortTime'}}<img src="assets/imgs/landing.png" alt="Departure Logo"></p>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+
+
+
+
+
+
+
+
+
+        </ion-item>
+    </ion-list>
+</ion-content>

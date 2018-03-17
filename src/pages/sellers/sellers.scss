@@ -1,0 +1,31 @@
+page-sellers {
+    .seller-logo {
+        width: 80px;
+        float: right;
+        height: auto;
+    }
+    .seller-price {
+        font-weight: normal;
+        font-size: 16px;
+        font-weight: bold;
+        direction: rtl;
+        float: left;
+        font-family: 'Ubuntu', sans-serif;
+        span {
+            font-family: 'Iransans';
+            font-size: 12px;
+        }
+    }
+    .seller-cta {
+        background-color: #21BA45;
+        color: white;
+        font-weight: normal;
+        padding: 8px 10px;
+        border-radius: 9px;
+        font-size: 12px;
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        width: 65%;
+    }
+}

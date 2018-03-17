@@ -1,0 +1,72 @@
+<ion-header>
+    <ion-navbar color="primary">
+        <ion-title>
+            پروازهاب
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <!-- Origin -->
+    <ion-list>
+        <ion-item>
+            <ion-label>مبدا</ion-label>
+            <ion-select interface="action-sheet" [(ngModel)]="origin_name">
+                <ion-option value="tehran">تهران</ion-option>
+                <ion-option value="mashhad">مشهد</ion-option>
+                <ion-option value="isfahan">اصفهان</ion-option>
+                <ion-option value="shiraz">شیراز</ion-option>
+                <ion-option value="yazd">یزد</ion-option>
+                <ion-option value="kish">کیش</ion-option>
+                <ion-option value="dubai">دبی</ion-option>
+                <ion-option value="istanbul">استانبول</ion-option>
+                <ion-option value="tabriz">تبریز</ion-option>
+                <ion-option value="abadan">آبادان</ion-option>
+                <ion-option value="ardabil">اردبیل</ion-option>
+                <ion-option value="bandarabbas">بندرعباس</ion-option>
+                <ion-option value="gheshm">قشم</ion-option>
+                <ion-option value="ahvaz">اهواز</ion-option>
+                <ion-option value="urmia">ارومیه</ion-option>
+                <ion-option value="rasht">رشت</ion-option>
+                <ion-option value="bandar lengeh">بندر لنگه</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+
+    <!-- Destination -->
+    <ion-list>
+        <ion-item>
+            <ion-label>مقصد</ion-label>
+            <ion-select interface="action-sheet" [(ngModel)]="destination_name">
+                <ion-option value="tehran">تهران</ion-option>
+                <ion-option value="mashhad">مشهد</ion-option>
+                <ion-option value="isfahan">اصفهان</ion-option>
+                <ion-option value="shiraz">شیراز</ion-option>
+                <ion-option value="yazd">یزد</ion-option>
+                <ion-option value="kish">کیش</ion-option>
+                <ion-option value="dubai">دبی</ion-option>
+                <ion-option value="istanbul">استانبول</ion-option>
+                <ion-option value="tabriz">تبریز</ion-option>
+                <ion-option value="abadan">آبادان</ion-option>
+                <ion-option value="ardabil">اردبیل</ion-option>
+                <ion-option value="bandarabbas">بندرعباس</ion-option>
+                <ion-option value="gheshm">قشم</ion-option>
+                <ion-option value="ahvaz">اهواز</ion-option>
+                <ion-option value="urmia">ارومیه</ion-option>
+                <ion-option value="rasht">رشت</ion-option>
+                <ion-option value="bandar lengeh">بندر لنگه</ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+    <!-- Date -->
+    <ion-grid class="no-padding">
+        <ion-row class="no-padding">
+            <ion-col col-12 class="no-padding">
+                <input readonly="true" class="datepicker" theme="dp-material" placeholder="تاریخ" [(ngModel)]="selectedDate" [dpDayPicker]="datePickerConfig" />
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <!-- Search Button -->
+    <button class="searchButton" ion-button full (click)="gotoFlightsPage(origin_name,destination_name,selectedDate,persianDate);">جستجوی پرواز</button>
+</ion-content>
